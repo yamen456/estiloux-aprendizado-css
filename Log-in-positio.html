@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            /* border: 10px solid black; */
+        }
+        body {
+            background-image: url('./horizonte-image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: grey;
+            color: #949494;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+        }
+        #form-container {
+            position: fixed;
+            top: calc(50% - (350px / 2));
+            left: calc(50% - 400px);
+            width: 800px;
+            height: 350px;
+            padding: 100px 40px;
+            background-color: #1d2229;
+            opacity: 0.9;
+            border: 1px solid #1d2229;
+            border-radius: 3px;
+        }
+        #signup {
+            width: 280px;
+        }
+
+        #signup h1 {
+            width: 70%;
+            font-size: 20px;
+            font-weight:100;
+        }
+        #signup p {
+            margin-top:10px;
+            margin-bottom:30px;
+        }
+        #signup a {
+            display: inline-block;
+            width: 120px;
+            padding: 5px 20px;
+            font-size: 12px;
+            color: #e2e2e4;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid #e2e2e4;
+            border-radius: 3px;
+        }
+        form {
+            position: absolute;
+            top: -10%;
+            right: 40px;
+            width: 50%;
+            height: 120%;
+            padding: 70px 40px;
+            background-color: white;
+            color: black;
+            border: 1px solid white;
+            border-radius: 3px;
+        }
+        form h2 {
+            color: #e4968a;
+            padding: 20px 0;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        form .linha {
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e2e4;
+        }
+
+        form .linha input {
+            width: 95%;
+            height: 35px;
+            font-size: 12px;
+            color: grey;
+            border: none;
+            outline: none;
+        }
+        form .linha i {
+            color: grey;
+        }
+        form #forgot-login button {
+            width: 48%;
+            height: 35px;
+            color: grey;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        } 
+        form #forgot-login #login {
+            background-color: #e4968a;
+            color: white;
+            text-transform: uppercase;
+            border: 1px solid #e4968a;
+            border-radius: 3px;
+        } 
+
+    </style>
+</head>
+<body>
+    <main id="form-container">
+        <div id="signup">
+            <h1>Don't Have an account?</h1>
+            <p>Banjo tote bag bicycle rights. High Life sartorial cry craft beer whatever street art fap.</p>
+            <a href="#">sign up</a>
+        </div>
+
+        <form action="">
+            <h2>Log in</h2>
+            <div class="linha">
+                <input type="email" id="email" placeholder="Email">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="linha">
+                <input type="password" id="senha" placeholder="Password">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div id="forgot-login">
+                <button id="forgot">Forgot password?</button>
+                <button id="login">Log in</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
